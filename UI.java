@@ -29,8 +29,6 @@ public class UI extends JFrame {
         catalogPanel.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
         buttonsPanel.setLayout(new GridLayout(1,4,5,5));
         JDialog createNewDirectory = new JDialog(UI.this, "Создание папки", true);
-        JPanel createNewDirPanel = new JPanel();
-        createNewDirectory.add(createNewDirPanel);
         File discs[] = File.listRoots(); // массив корневых каталогов
         filesScroll.setPreferredSize(new Dimension(400,500)); // чтобы окно не сжималось при маленьком числе элементов
         filesList.setListData(discs);
