@@ -197,7 +197,7 @@ public class UI extends JFrame {
     public String toFullPath(ArrayList<String> file) {
         String listPart = "";
         for(String str : file)
-            listPart += str;
+            listPart += "\\" + str;
         return listPart;
     }
     public void deleteDir(File file){
